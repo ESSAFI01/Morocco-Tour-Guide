@@ -1,12 +1,9 @@
 # Morocco Tour Guide - AI-Powered Virtual Tourist Guide
 
-![Morocco Tour Guide Logo](https://via.placeholder.com/800x200?text=Morocco+Tour+Guide)
-
 An intelligent virtual guide that provides personalized information about Morocco's attractions, culture, and travel recommendations using **Retrieval Augmented Generation (RAG)** and **LLM technologies**.
 
 ## 🌟 Features
 - **Intelligent Conversational Interface**: Chat naturally with an AI tour guide specialized in Moroccan tourism.
-- **Personalized Recommendations**: Get customized travel suggestions based on your interests.
 - **Cultural Context**: Learn about Moroccan history, traditions, cuisine, and local customs.
 - **Up-to-date Information**: Access information about attractions, accommodations, and travel logistics.
 - **User Authentication**: Secure login system to save conversations and preferences.
@@ -22,7 +19,6 @@ This application uses a modern architecture with the following components:
 - **AI Services**: Integration with Google's Gemini for response generation and Cohere for text embeddings.
 - **Deployment**: Containerized with Docker and deployed on Azure Container Apps.
 
-![Architecture Diagram](https://via.placeholder.com/800x500?text=Architecture+Diagram)
 
 ## 🚀 Getting Started
 ### Prerequisites
@@ -51,7 +47,7 @@ QDRANT_API_KEY=your_qdrant_api_key
 ### Running with Docker
 #### Clone the repository:
 ```bash
-git clone https://github.com/yourusername/moroccan-tour-guide.git
+git clone https://github.com/ESSAFI01/Morocco-Tour-Guide.git
 cd moroccan-tour-guide
 ```
 
@@ -86,8 +82,7 @@ The API documentation is available at **/docs** or **/redoc** when the backend i
 - `/api/login` - User authentication
 - `/api/register` - User registration
 - `/api/chat` - Chat with the Morocco Tour Guide
-- `/api/attractions` - Get information about attractions
-- `/api/user` - User profile management
+-  ...
 
 ## 🌐 Deployment
 The application is deployed on **Azure Container Apps**:
@@ -130,7 +125,6 @@ The application is deployed on **Azure Container Apps**:
 ### **DevOps**
 - Docker & Docker Compose
 - Azure Container Apps
-- GitHub Actions (CI/CD)
 
 ## 💡 Future Enhancements
 - Multi-language support (Arabic, French, Spanish)
