@@ -1,0 +1,25 @@
+services:
+  frontend:
+    build:
+      context: ./frontend/vite-project
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB=${MONGODB}
+      - URL=${URL}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - COHERE_API_KEY=${COHERE_API_KEY}
+      - QDRANT_API_KEY=${QDRANT_API_KEY}
+    restart: unless-stopped
